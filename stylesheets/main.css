@@ -1803,7 +1803,7 @@ body.stretched #header.full-header #main-menu ul li.mega-menu .mega-menu-content
 }
 .video-wrap video {
 	width: 100%!important;
-	height: auto!important
+	height: 100%!important
 }
 .yt-bg-player {
 	background-size: cover;
