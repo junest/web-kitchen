@@ -92,7 +92,7 @@
             <h4 class="text-capitalize" data-caption-animate="fadeInUp" data-caption-delay="300">We Create Sweet Memories.</h4>
           </div>
           <div class="video-wrap">
-            <video poster="img/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
+            <video id="vid-bg-1" poster="img/videos/explore-poster.jpg" preload="auto" playsinline loop autoplay muted>
               <source src='img/videos/explore.mp4' type='video/mp4' />
               <source src='img/videos/explore.webm' type='video/webm' />
             </video>
@@ -425,7 +425,7 @@
       </div>
       <!-- Video html5 source -->
       <div class="video-wrap">
-        <video poster="img/videos/explore-poster.jpg" preload="auto" playsinline loop autoplay muted style="width: 1429.89236545682px; height: 804px; left: -4.44618272841058px;">
+        <video id="vid-bg-2" poster="img/videos/explore-poster.jpg" preload="auto" playsinline loop autoplay muted style="width: 1429.89236545682px; height: 804px; left: -4.44618272841058px;">
           <source src="img/videos/explore.mp4" type="video/mp4">
           <source src="img/videos/explore.webm" type="video/webm">
         </video>
@@ -615,5 +615,15 @@
 <script src="javascripts/libs/modernizr.js"></script>
 <!-- JS Custom Codes -->
 <script src="javascripts/custom/main.js" ></script>
+
+<!-- START: Mobile Autoplay Video -->
+<script>
+for (video of document.getElementsByTagName("video")) {
+      video.setAttribute("playsinline", "");
+      video.setAttribute("muted", "");
+      video.play();
+}
+</script>
+<!-- END: Mobile Autoplay Video -->
 </body>
 </html>
