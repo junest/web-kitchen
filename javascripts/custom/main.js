@@ -863,13 +863,13 @@ var MAJESTY = MAJESTY || {};
                         elementVideo.css({ 'width': innerVideoWidth+'px', 'height': innerVideoHeight+'px', 'top': -innerVideoPosition+'px' });
                     }
 
-                    if( MAJESTY.isMobile.any() ) {
-                        var placeholderImg = elementVideo.attr('poster');
+                    // if( MAJESTY.isMobile.any() ) {
+                    //     var placeholderImg = elementVideo.attr('poster');
 
-                        if( placeholderImg != '' ) {
-                            element.append('<div class="video-placeholder" style="background-image: url('+ placeholderImg +');"></div>')
-                        }
-                    }
+                    //     if( placeholderImg != '' ) {
+                    //         element.append('<div class="video-placeholder" style="background-image: url('+ placeholderImg +');"></div>')
+                    //     }
+                    // }
                 });
             }
         },
